@@ -24,6 +24,9 @@ chars = 0
 
 for line in fh:
 	#print(line) for verification
+	lines += 1
+	#if want to loop thru again the file, need to close and reopen!
+print(lines)
 #-------------------------------------------------------------------------------
 # our code for analyzing the data
 #-------------------------------------------------------------------------------
