@@ -3,10 +3,10 @@
 import argparse
 
 parser = argparse.ArgumentParser( description="" )
-
+#add argument
 parser.add_argument(
-	"arg",
-	help="what does this do?",
+	"data_file",
+	help="path to the file we want to read",
 )
 
 #-------------------------------------------------------------------------------
@@ -18,3 +18,6 @@ args = parser.parse_args( )
 #-------------------------------------------------------------------------------
 # our code for analyzing the data
 #-------------------------------------------------------------------------------
+args = parser.parse_args()
+print(args)
+print(args.data_file)
