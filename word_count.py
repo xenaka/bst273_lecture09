@@ -14,10 +14,21 @@ parser.add_argument(
 #-------------------------------------------------------------------------------
 
 args = parser.parse_args( )
+fh = open(args.data_file)
 
+print("the fh is",fh)
+
+lines = 0  #want it to be a number
+words = 0
+chars = 0
+
+for line in fh:
+	#print(line) for verification
 #-------------------------------------------------------------------------------
 # our code for analyzing the data
 #-------------------------------------------------------------------------------
-args = parser.parse_args()
-print(args)
-print(args.data_file)
+
+#TO VERIFY at the beginning
+##args = parser.parse_args()
+#print(args)
+#print(args.data_file)
